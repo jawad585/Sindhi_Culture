@@ -87,6 +87,41 @@ nav a:hover{color:var(--ochre)}
 .students{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 .students li{padding:6px 18px;border:1px solid var(--ochre);background:var(--sand);border-radius:30px;font-size:.95rem}
 
+/* MORE CRAFTS */
+.more{max-width:1200px;margin:0 auto;padding:80px 5vw;text-align:center}
+.more h2{font-size:clamp(2.2rem,5vw,3.4rem);color:var(--indigo);margin-bottom:8px}
+.more .sub{color:var(--madder);font-style:italic;margin-bottom:44px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;text-align:left}
+.card{background:#fff;border-top:4px solid var(--ochre);box-shadow:0 10px 30px rgba(16,26,48,.14);display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(16,26,48,.22)}
+.card-img{height:190px;overflow:hidden;background:var(--sand)}
+.card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.card:hover .card-img img{transform:scale(1.07)}
+.card-img.missing img{display:none}
+.card-img.missing{background:
+  radial-gradient(circle at 50% 50%,var(--ochre) 0 5px,transparent 6px),
+  repeating-linear-gradient(45deg,rgba(212,154,42,.2) 0 10px,transparent 10px 20px),
+  var(--indigo);background-size:34px 34px,auto,auto}
+.card:nth-child(3n+2) .card-img.missing{background-color:var(--madder)}
+.card:nth-child(3n) .card-img.missing{background-color:var(--turq)}
+.card-body{padding:20px 22px 24px}
+.card h3{font-size:1.7rem;color:var(--indigo);line-height:1.1}
+.card .tag{color:var(--madder);font-size:.85rem;letter-spacing:1px;text-transform:uppercase;margin:4px 0 10px}
+.card p{font-size:.95rem;margin-bottom:0}
+.card .tag{margin-bottom:10px}
+@media(max-width:980px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.cards{grid-template-columns:1fr}}
+
+/* CREDITS */
+.credits{max-width:860px;margin:0 auto;padding:90px 6vw}
+.credits h2{font-size:clamp(2rem,4vw,2.8rem);color:var(--indigo);text-align:center}
+.credits .sub{text-align:center;color:var(--madder);margin-bottom:30px;font-style:italic}
+.credits ul{list-style:none}
+.credits li{padding:12px 0;border-bottom:1px dashed var(--ochre);font-size:.95rem}
+.credits a{color:var(--madder)}
+.credits .small{margin-top:20px;font-size:.85rem;opacity:.7;text-align:center}
+.cr{color:var(--ochre);font-size:.8rem;text-decoration:none}
+
 footer{background:var(--indigo-d);color:var(--sand);text-align:center;padding:40px 6vw;border-top:3px solid var(--ochre)}
 footer .small{opacity:.6;font-size:.85rem;margin-top:6px}
 

@@ -8,7 +8,7 @@ btn.addEventListener('click', () => {
 menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
 
 // Show a decorative placeholder if a photo is missing
-document.querySelectorAll('.photo').forEach(fig => {
+document.querySelectorAll('.photo, .card-img').forEach(fig => {
   const img = fig.querySelector('img');
   const markMissing = () => fig.classList.add('missing');
   if (!img) return;
